@@ -55,8 +55,6 @@ def most_frequent_n_grams(text: str,
           The list shall be sorted in descending order of occurrence count, with ties broken in
           ascending lexicographic/alphabetical order of the n-gram words.
   """
-  if min_len > max_len:
-    return {}
   top_dict = {}
   n_grams_dict = {}
   for n_gram_len in range(min_len, max_len + 1):
