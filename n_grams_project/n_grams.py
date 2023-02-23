@@ -56,7 +56,6 @@ def most_frequent_n_grams(text: str,
           ascending lexicographic/alphabetical order of the n-gram words.
   """
   top_dict = {}
-  n_grams_dict = {}
   for n_gram_len in range(min_len, max_len + 1):
     n_grams_dict = n_grams(text, n_gram_len)
     sorted_keys = sorted(list(n_grams_dict.keys()))[-limit:][::-1]
