@@ -1,8 +1,13 @@
 r"""
 CS 20P n-grams!
 
-This was a project assigned to me for the CS20p class at Cabrillo College.
-For the purposes of this assignment, a word shall be defined as a sequence of non-whitespace
+This was a project assigned to me for the CS20p class at Cabrillo College. The objective was
+to define three functions: n_grams, most_frequent_n_grams, and main. n_grams returns all 
+n-grams of a certain length that appear at least a certain number of times in a text. 
+most_frequent_n_grams returns the top most frequent n-grams of a range of lengths based on a
+limit (top 5, top 10, etc.) in a text. The main function prints the behavior of n_grams. 
+
+For the purposes of this assignment, a word was defined as a sequence of non-whitespace
 characters, with the following characters stripped from either end: !"#%&'()*,-./:;?@\_¡§¶·¿
 """
 __author__ = 'Axel V. Morales Sanchez'
