@@ -35,7 +35,7 @@ corr = df2.corr()
 sns.heatmap(corr)
 sns.pairplot(data = df2, vars = df2.columns[:5], diag_kind = "kde")
 max_corr = max(corr['price'][1:])
-best_guess_predictor = corr['price'][corr['price'] == max_corr].ind
+best_guess_predictor = corr['price'][corr['price'] == max_corr].index[0]
 
 
 r"""
